@@ -1,0 +1,6 @@
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\ConsoleApplication2\task 3\bin\Debug\task 3.exe.config
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\ConsoleApplication2\task 3\bin\Debug\task 3.exe
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\ConsoleApplication2\task 3\bin\Debug\task 3.pdb
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\ConsoleApplication2\task 3\obj\Debug\task 3.csprojResolveAssemblyReference.cache
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\ConsoleApplication2\task 3\obj\Debug\task 3.exe
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\ConsoleApplication2\task 3\obj\Debug\task 3.pdb
