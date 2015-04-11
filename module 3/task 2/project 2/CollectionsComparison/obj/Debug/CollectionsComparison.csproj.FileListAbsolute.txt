@@ -1,0 +1,9 @@
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\CollectionsComparison\CollectionsComparison\bin\Debug\CollectionsComparison.exe.config
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\CollectionsComparison\CollectionsComparison\obj\Debug\CollectionsComparison.csprojResolveAssemblyReference.cache
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\CollectionsComparison\CollectionsComparison\bin\Debug\CollectionsComparison.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\CollectionsComparison\CollectionsComparison\bin\Debug\CollectionsComparison.pdb
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\CollectionsComparison\CollectionsComparison\obj\Debug\CollectionsComparison.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\CollectionsComparison\CollectionsComparison\obj\Debug\CollectionsComparison.pdb
+d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 2\CollectionsComparison\bin\Debug\CollectionsComparison.exe.config
+d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 2\CollectionsComparison\obj\Debug\CollectionsComparison.exe
+d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 2\CollectionsComparison\obj\Debug\CollectionsComparison.pdb
