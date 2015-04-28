@@ -44,11 +44,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salad.cs" />
-    <Compile Include="Vegetables\Cabbage.cs" />
-    <Compile Include="Vegetables\Cucumber.cs" />
-    <Compile Include="Vegetables\Potato.cs" />
-    <Compile Include="Vegetables\SweetPepper.cs" />
-    <Compile Include="Vegetables\Tomato.cs" />
+    <Compile Include="Vegetables\FruitVegetable.cs" />
+    <Compile Include="Vegetables\Fruit\Cabbage.cs" />
+    <Compile Include="Vegetables\Fruit\Cucumber.cs" />
+    <Compile Include="Vegetables\TuberVegetable.cs" />
+    <Compile Include="Vegetables\Tuber\Potato.cs" />
+    <Compile Include="Vegetables\Fruit\SweetPepper.cs" />
+    <Compile Include="Vegetables\Fruit\Tomato.cs" />
     <Compile Include="Vegetables\Vegetable.cs" />
   </ItemGroup>
   <ItemGroup>

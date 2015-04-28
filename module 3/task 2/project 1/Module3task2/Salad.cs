@@ -41,14 +41,14 @@ namespace Module_3__task_2
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            result.Append("Salad contains: ");
+            result.Append("Salad contains: \n");
             for (int i = 0; i < _vegetables.Count; i++)
             {
                 result.Append(_vegetables[i]);
 
                 if (i != _vegetables.Count - 1)
                 {
-                    result.Append(", ");
+                    result.Append(";\n");
                 }
                 else
                 {

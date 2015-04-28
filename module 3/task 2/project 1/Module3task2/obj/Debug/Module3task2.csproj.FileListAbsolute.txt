@@ -4,3 +4,9 @@ C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\Module 3, task 
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\Module 3, task 2\Module3Task2\bin\Debug\Module3task2.pdb
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\Module 3, task 2\Module3Task2\obj\Debug\Module3task2.exe
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\Module 3, task 2\Module3Task2\obj\Debug\Module3task2.pdb
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 1\Module3Task2\bin\Debug\Module3task2.exe.config
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 1\Module3Task2\obj\Debug\Module3task2.exe
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 1\Module3Task2\obj\Debug\Module3task2.csprojResolveAssemblyReference.cache
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 1\Module3Task2\bin\Debug\Module3task2.exe
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 1\Module3Task2\bin\Debug\Module3task2.pdb
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 1\Module3Task2\obj\Debug\Module3task2.pdb

@@ -3,44 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Module_3__task_2.Vegetables;
+using Module_3__task_2.Vegetables.Fruit;
+using Module_3__task_2.Vegetables.Tuber;
 
 namespace Module_3__task_2
 {
     public class Program
     {
+        private static string Lifespan;
+        private static string IngatheringType;
         public static void Main()
         {
+            
             Console.WriteLine("Let's cook vegetable salad and calculate its calorific value.");
             Console.WriteLine("\nPlease enter tomato's weight:");
 
             double tomatoWeight = double.Parse(Console.ReadLine());
-
-            var tomato = new Tomato(tomatoWeight, 15);
+            
+            var tomato = new Tomato(tomatoWeight, 15, Lifespan);
 
             Console.WriteLine("\nPlease enter potato's weight:");
 
             double potatoWeight = double.Parse(Console.ReadLine());
 
-            var potato = new Potato(potatoWeight, 60);
+            var potato = new Potato(potatoWeight, 60, IngatheringType);
 
             Console.WriteLine("\nPlease enter cucumber's weight:");
 
             double cucumberWeight = double.Parse(Console.ReadLine());
 
-            var cucumber = new Cucumber(cucumberWeight, 15);
+            var cucumber = new Cucumber(cucumberWeight, 15, Lifespan);
 
             Console.WriteLine("\nPlease enter sweet pepper's weight:");
 
             double sweetpepperWeight = double.Parse(Console.ReadLine());
 
-            var sweetpepper = new SweetPepper(sweetpepperWeight, 19);
+            var sweetpepper = new SweetPepper(sweetpepperWeight, 19, Lifespan);
 
             Console.WriteLine("\nPlease enter cabbage's weight:");
 
             double cabbageWeight = double.Parse(Console.ReadLine());
 
-            var cabbage = new Cabbage(cabbageWeight, 23);
+            var cabbage = new Cabbage(cabbageWeight, 23, Lifespan);
 
             var salad = new Salad();
             salad.Add(tomato);
@@ -49,7 +53,7 @@ namespace Module_3__task_2
             salad.Add(sweetpepper);
             salad.Add(cabbage);
 
-            totalCalorificValue = CalorificValue
+            //totalCalorificValue = CalorificValue;
 
             Console.WriteLine(salad);
             //foreach(var vegetable in salad.Vegetables)

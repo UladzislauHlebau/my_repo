@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Module_3__task_2.Vegetables
 {
-    public abstract class Vegetable
+    public class TuberVegetable : Vegetable
     {
-        protected double Weight;
-        protected double Index;
+         protected string IngatheringType { get; set; }
 
-        public Vegetable() { }
+        public TuberVegetable() { }
 
-        public Vegetable(double weight, double index)
+        public TuberVegetable(double weight, double index, string ingatheringType)
         {
             Weight = weight;
             Index = index;
+            IngatheringType = ingatheringType;
         }
 
         public double CalorificValue()
         {
-            return Weight * (Index / 100);
+            return Weight * (Index / 80);
         }
     }
 }

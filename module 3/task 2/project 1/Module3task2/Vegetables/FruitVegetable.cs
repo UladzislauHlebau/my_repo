@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Module_3__task_2.Vegetables
 {
-    public abstract class Vegetable
+   public class FruitVegetable : Vegetable
     {
-        protected double Weight;
-        protected double Index;
+        protected string Lifespan { get; set; }
 
-        public Vegetable() { }
+        public FruitVegetable() { }
 
-        public Vegetable(double weight, double index)
+        public FruitVegetable(double weight, double index, string lifespan)
         {
             Weight = weight;
             Index = index;
+            Lifespan = lifespan;
         }
 
         public double CalorificValue()
         {
-            return Weight * (Index / 100);
+            return Weight * (Index / 90);
         }
     }
 }
