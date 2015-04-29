@@ -8,7 +8,7 @@ namespace Module_3__task_2.Vegetables
 {
     public class TuberVegetable : Vegetable
     {
-         protected string IngatheringType { get; set; }
+         public string IngatheringType { get; set; }
 
         public TuberVegetable() { }
 

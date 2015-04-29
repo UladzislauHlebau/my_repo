@@ -10,12 +10,11 @@ namespace Module_3__task_2.Vegetables.Fruit
     {
         public Cucumber() { }
 
-        public Cucumber(double weight, double index, string Lifespan)
-            : base(weight, index, Lifespan)
+        public Cucumber(double weight, double index, string lifespan)
+            : base(weight, index, lifespan)
         {
             Console.WriteLine("Please enter lifespan for cucumber:");
-            string lifespan = Console.ReadLine();
-            lifespan = Lifespan;
+            lifespan = Console.ReadLine();
         }
 
         public override string ToString()

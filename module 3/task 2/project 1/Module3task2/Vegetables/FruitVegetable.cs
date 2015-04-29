@@ -8,7 +8,7 @@ namespace Module_3__task_2.Vegetables
 {
    public class FruitVegetable : Vegetable
     {
-        protected string Lifespan { get; set; }
+       public string Lifespan { get; set; }
 
         public FruitVegetable() { }
 

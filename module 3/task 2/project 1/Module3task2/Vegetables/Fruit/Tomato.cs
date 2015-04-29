@@ -15,7 +15,6 @@ namespace Module_3__task_2.Vegetables.Fruit
         {
             Console.WriteLine("Please enter lifespan for tomato:");
             lifespan = Console.ReadLine();
-            lifespan = Lifespan;
         }
 
         public override string ToString()

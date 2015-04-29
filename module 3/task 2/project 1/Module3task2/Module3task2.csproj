@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryFileDeserialization.cs" />
+    <Compile Include="BinaryTextWriter.cs" />
+    <Compile Include="BinaryTextWriterUsingSerialization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextReader.cs" />
     <Compile Include="Salad.cs" />
+    <Compile Include="TextWriter.cs" />
     <Compile Include="Vegetables\FruitVegetable.cs" />
     <Compile Include="Vegetables\Fruit\Cabbage.cs" />
     <Compile Include="Vegetables\Fruit\Cucumber.cs" />

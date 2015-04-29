@@ -16,7 +16,7 @@ namespace Module_3__task_2.Vegetables.Tuber
         {
             Console.WriteLine("Please enter ingathering type for potato:");
             ingatheringType = Console.ReadLine();
-            ingatheringType = IngatheringType;
+           
         }
 
         public override string ToString()

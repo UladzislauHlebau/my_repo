@@ -14,12 +14,12 @@ namespace Module_3__task_2
         private static string IngatheringType;
         public static void Main()
         {
-            
             Console.WriteLine("Let's cook vegetable salad and calculate its calorific value.");
+
             Console.WriteLine("\nPlease enter tomato's weight:");
 
             double tomatoWeight = double.Parse(Console.ReadLine());
-            
+        
             var tomato = new Tomato(tomatoWeight, 15, Lifespan);
 
             Console.WriteLine("\nPlease enter potato's weight:");
@@ -67,6 +67,11 @@ namespace Module_3__task_2
             {
                 Console.WriteLine(vegetable);
             }
+
+            var TextWriter = new TextWriter();
+            
+            
+
             Console.WriteLine("\nPlease enter 'exit' and press 'Enter' button to quit.");
             string exit = Console.ReadLine();
 
