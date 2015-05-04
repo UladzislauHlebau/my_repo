@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Module_3__task_2.Vegetables.Fruit;
+using Module_3__task_2.Vegetables.Tuber;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace Module_3__task_2
 {
     class TextWriter
     {
-        static Salad salad;
+        private Salad salad;
         public void WriteToTextFile()
         {
             FileStream fs = null;
@@ -21,6 +23,12 @@ namespace Module_3__task_2
                 using (StreamWriter sw = new StreamWriter(fs))
                 {
                     // Write your string to file
+                    salad = new Salad();
+                    salad.Add(new Tomato());
+                    salad.Add(new Cucumber());
+                    salad.Add(new Cabbage());
+                    salad.Add(new SweetPepper());
+                    salad.Add(new Potato());
                     sw.WriteLine(salad);
                 }
             }

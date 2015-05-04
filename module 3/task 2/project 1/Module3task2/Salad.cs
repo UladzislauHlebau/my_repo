@@ -7,6 +7,7 @@ using Module_3__task_2.Vegetables;
 
 namespace Module_3__task_2
 {
+    [Serializable]
     public class Salad
     {
         private List<Vegetable> _vegetables = new List<Vegetable>();

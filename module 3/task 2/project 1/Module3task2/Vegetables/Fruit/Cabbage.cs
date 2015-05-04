@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module_3__task_2.Vegetables.Fruit
 {
+    [Serializable]
     public class Cabbage : FruitVegetable
     {
         public Cabbage() { }

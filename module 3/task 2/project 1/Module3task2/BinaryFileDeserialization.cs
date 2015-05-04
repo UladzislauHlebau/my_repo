@@ -18,7 +18,7 @@ namespace Module3task2
             try
             {
                 BinaryFormatter formatter = new BinaryFormatter();
-                //park.Cars = (List<Car>)formatter.Deserialize(fs);
+                //salad
             }
 
             catch (IOException)

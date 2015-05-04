@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module_3__task_2.Vegetables
 {
+    [Serializable]
     public class TuberVegetable : Vegetable
     {
          public string IngatheringType { get; set; }

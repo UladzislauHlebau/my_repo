@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Module_3__task_2.Vegetables.Fruit;
+using Module_3__task_2.Vegetables.Tuber;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,6 +25,13 @@ namespace Module_3__task_2
                 BinaryFormatter formatter = new BinaryFormatter();
                 {
                     // Write your string to binary file
+                    salad = new Salad();
+                    salad.Add(new Tomato());
+                    salad.Add(new Cucumber());
+                    salad.Add(new Cabbage());
+                    salad.Add(new SweetPepper());
+                    salad.Add(new Potato());
+
                     formatter.Serialize(fs, salad);
                     Console.WriteLine("Object has been serialized.");
                 }

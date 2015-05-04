@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Module_3__task_2.Vegetables
 {
-   public class FruitVegetable : Vegetable
+    [Serializable]
+    public class FruitVegetable : Vegetable
     {
        public string Lifespan { get; set; }
 

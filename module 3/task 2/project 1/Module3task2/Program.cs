@@ -12,6 +12,44 @@ namespace Module_3__task_2
     {
         private static string Lifespan;
         private static string IngatheringType;
+
+        private static void MenuCreate()
+        {
+            Console.WriteLine("Please select operation and click Enter: ");
+            Console.WriteLine("Enter 1 to write to binary file.");
+            Console.WriteLine("Enter 2 to write to text file file.");
+            Console.WriteLine("Enter 3 to read from text file.");
+            Console.WriteLine("Enter 4 to write to binary file using serialization.");
+        }
+
+        public static void SaladCreation()
+        {
+            int MenuValue = Console.Read();
+        
+            switch (MenuValue)
+            {
+                case '1':
+                    BinaryTextWriter bt = new BinaryTextWriter();
+                    bt.WriteToBinaryFile();
+                    break;
+                case '2':
+                    TextWriter wt = new TextWriter();
+                    wt.WriteToTextFile();
+                    break;
+                case '3':
+                    TextReader tr = new TextReader();
+                    tr.ReadTextFromFile();
+                    break;
+                case '4':
+                    BinaryTextWriterUsingSerialization btw = new BinaryTextWriterUsingSerialization();
+                    btw.WriteToBinaryFileUsingSerialization();
+                    break;
+             default:
+                    Console.WriteLine("Such an operation doesn't exist, please retry.");
+                    break;
+            }
+        }
+        
         public static void Main()
         {
             Console.WriteLine("Let's cook vegetable salad and calculate its calorific value.");
@@ -53,37 +91,36 @@ namespace Module_3__task_2
             salad.Add(sweetpepper);
             salad.Add(cabbage);
 
-            //totalCalorificValue = CalorificValue;
+           
 
             Console.WriteLine(salad);
-            //foreach(var vegetable in salad.Vegetables)
+
+            //salad.Sort();
+            //Console.WriteLine("\nHere is the list of vegetables in our salad sorted by calorific value:");
+            //foreach (var vegetable in salad.Vegetables)
             //{
             //    Console.WriteLine(vegetable);
             //}
 
-            salad.Sort();
-            Console.WriteLine("\nHere is the list of vegetables in our salad sorted by calorific value:");
-            foreach (var vegetable in salad.Vegetables)
-            {
-                Console.WriteLine(vegetable);
-            }
-
-            var TextWriter = new TextWriter();
             
             
 
-            Console.WriteLine("\nPlease enter 'exit' and press 'Enter' button to quit.");
-            string exit = Console.ReadLine();
+            //Console.WriteLine("\nPlease enter 'exit' and press 'Enter' button to quit.");
+            //string exit = Console.ReadLine();
 
-            if (exit == "exit")
-            {
-                Environment.Exit(0);
-            }
-            else
-            {
-            Console.WriteLine("\nPlease enter 'exit' and press 'Enter' to quit.");
-            }
-            Console.ReadLine();
+            //if (exit == "exit")
+            //{
+            //    Environment.Exit(0);
+            //}
+            //else
+            //{
+            //Console.WriteLine("\nPlease enter 'exit' and press 'Enter' to quit.");
+            //}
+
+            MenuCreate();
+            SaladCreation();
+
+           Console.ReadLine();
 
         }
     }

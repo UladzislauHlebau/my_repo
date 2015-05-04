@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Module_3__task_2.Vegetables.Fruit;
+using Module_3__task_2.Vegetables.Tuber;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace Module_3__task_2
 {
     class BinaryTextWriter
     {
-        static Salad salad;
+        private Salad salad;
         public void WriteToBinaryFile()
         {
             string BinaryFile = "BinaryFile.dat";
@@ -22,6 +24,13 @@ namespace Module_3__task_2
                 using (BinaryWriter bw = new BinaryWriter(fs))
                 {
                     // Write your string to binary file
+                    salad = new Salad();
+                    salad.Add(new Tomato());
+                    salad.Add(new Cucumber());
+                    salad.Add(new Cabbage());
+                    salad.Add(new SweetPepper());
+                    salad.Add(new Potato());
+
                     bw.Write(salad.ToString());
                     Console.WriteLine("Objects were successfully added to a binary file.\n");
                 }
