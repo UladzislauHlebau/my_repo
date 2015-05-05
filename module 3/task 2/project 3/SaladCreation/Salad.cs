@@ -3,44 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SaladCreation.Vegetables;
 
-namespace Module_3__task_2.Vegetables
+namespace SaladCreation
 {
     [Serializable]
     public class Salad
     {
-        //private List<Vegetable> _vegetables = new List<Vegetable>();
-        //public List<Vegetable> Vegetables
-        //{
-        //    get
-        //    {
-        //        return _vegetables;
-        //    }
-        //}
-
-
-        //public void Add(Vegetable vegetable)
-        //{
-        //    _vegetables.Add(vegetable);
-        //}
-
-        public List<Salad> SaladCollection = new List<Salad>();
+        public List<Vegetable> SaladCollection = new List<Vegetable>();
 
         public void Create()
         {
-            Salad cabbage = new Cabbage(400, 15, "hey");
+            Vegetable cabbage = new Cabbage(100, 24, "1 year");
             SaladCollection.Add(cabbage);
 
-            Salad cucumber = new Cucumber(400, 15, "hey");
+            Vegetable cucumber = new Cucumber(50, 15, "1 year");
             SaladCollection.Add(cucumber);
 
-            Salad sweetpepper = new SweetPepper(400, 15, "hey");
+            Vegetable sweetpepper = new SweetPepper(100, 50, "1 year");
             SaladCollection.Add(sweetpepper);
 
-            Salad tomato = new Tomato(400, 15, "hey");
+            Vegetable tomato = new Tomato(150, 25, "1 year");
             SaladCollection.Add(tomato);
 
-            Salad potato = new Potato(400, 15, "hey");
+            Vegetable potato = new Potato(200, 45, "Greenhouse type");
             SaladCollection.Add(potato);
         }
 
@@ -77,11 +63,11 @@ namespace Module_3__task_2.Vegetables
         }
     }
 
-    //public class CalorificComparer : IComparer<Salad>
-    //{
-    //    public int Compare(Salad x, Salad y)
-    //    {
-    //        return x.CalorificValue().CompareTo(y.CalorificValue());
-    //    }
-    //}
+    public class CalorificComparer : IComparer<Vegetable>
+    {
+        public int Compare(Vegetable x, Vegetable y)
+        {
+            return x.CalorificValue().CompareTo(y.CalorificValue());
+        }
+    }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_3__task_2.Vegetables
+namespace SaladCreation.Vegetables
 {
     [Serializable]
     public class Potato : TuberVegetable
@@ -15,9 +15,7 @@ namespace Module_3__task_2.Vegetables
         public Potato(double weight, double index, string ingatheringType)
             : base(weight, index, ingatheringType)
         {
-            Console.WriteLine("Please enter ingathering type for potato:");
-            ingatheringType = Console.ReadLine();
-           
+            
         }
 
         public override string ToString()

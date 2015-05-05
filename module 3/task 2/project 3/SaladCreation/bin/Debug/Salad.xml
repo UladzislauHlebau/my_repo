@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Salad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SaladCollection>
+    <Vegetable xsi:type="Cabbage">
+      <Lifespan>1 year</Lifespan>
+    </Vegetable>
+    <Vegetable xsi:type="Cucumber">
+      <Lifespan>1 year</Lifespan>
+    </Vegetable>
+    <Vegetable xsi:type="SweetPepper">
+      <Lifespan>1 year</Lifespan>
+    </Vegetable>
+    <Vegetable xsi:type="Tomato">
+      <Lifespan>1 year</Lifespan>
+    </Vegetable>
+    <Vegetable xsi:type="Potato">
+      <IngatheringType>Greenhouse type</IngatheringType>
+    </Vegetable>
+  </SaladCollection>
+</Salad>

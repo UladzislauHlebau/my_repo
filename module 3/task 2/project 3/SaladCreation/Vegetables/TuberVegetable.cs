@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_3__task_2.Vegetables
+namespace SaladCreation.Vegetables
 {
     [Serializable]
     public class TuberVegetable : Vegetable
     {
-         public string IngatheringType { get; set; }
+        public string IngatheringType { get; set; }
 
         public TuberVegetable() { }
 
@@ -20,9 +20,9 @@ namespace Module_3__task_2.Vegetables
             IngatheringType = ingatheringType;
         }
 
-        //public double CalorificValue()
-        //{
-        //    return Weight * (Index / 80);
-        //}
+        public double CalorificValue()
+        {
+            return Weight * (Index / 80);
+        }
     }
 }

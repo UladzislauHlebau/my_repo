@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_3__task_2.Vegetables
+namespace SaladCreation
 {
+    [Serializable]
     public abstract class Vegetable
     {
         protected double Weight;

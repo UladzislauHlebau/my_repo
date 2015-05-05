@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_3__task_2.Vegetables
+namespace SaladCreation.Vegetables
 {
     [Serializable]
     public class SweetPepper : FruitVegetable
@@ -14,8 +14,7 @@ namespace Module_3__task_2.Vegetables
         public SweetPepper(double weight, double index, string lifespan)
             : base(weight, index, lifespan)
         {
-            Console.WriteLine("Please enter lifespan for sweet pepper:");
-            lifespan = Console.ReadLine();
+            
         }
 
         public override string ToString()

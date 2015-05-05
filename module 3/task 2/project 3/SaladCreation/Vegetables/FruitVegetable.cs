@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module_3__task_2.Vegetables
+namespace SaladCreation.Vegetables
 {
     [Serializable]
     public class FruitVegetable : Vegetable
     {
-       public string Lifespan { get; set; }
+        public string Lifespan { get; set; }
 
         public FruitVegetable() { }
 
@@ -20,9 +20,9 @@ namespace Module_3__task_2.Vegetables
             Lifespan = lifespan;
         }
 
-        //public double CalorificValue()
-        //{
-        //    return Weight * (Index / 90);
-        //}
+        public double CalorificValue()
+        {
+            return Weight * (Index / 90);
+        }
     }
 }

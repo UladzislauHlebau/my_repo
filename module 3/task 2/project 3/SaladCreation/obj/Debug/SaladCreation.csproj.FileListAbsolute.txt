@@ -1,0 +1,6 @@
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\SaladCreation\bin\Debug\SaladCreation.exe.config
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\SaladCreation\obj\Debug\SaladCreation.csprojResolveAssemblyReference.cache
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\SaladCreation\bin\Debug\SaladCreation.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\SaladCreation\bin\Debug\SaladCreation.pdb
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\SaladCreation\obj\Debug\SaladCreation.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\SaladCreation\obj\Debug\SaladCreation.pdb
