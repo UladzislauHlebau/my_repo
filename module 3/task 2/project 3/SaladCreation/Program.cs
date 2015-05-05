@@ -8,6 +8,7 @@ using SaladCreation.Vegetables;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using System.Xml;
+using Newtonsoft.Json;
 
 namespace SaladCreation
 {
@@ -29,6 +30,8 @@ namespace SaladCreation
 
             SaladCreationMenu();
 
+            
+
             Console.ReadLine();
         }
 
@@ -41,6 +44,8 @@ namespace SaladCreation
             Console.WriteLine("Enter 4 to write to binary file using serialization.");
             Console.WriteLine("Enter 5 to deserialize from binary file.");
             Console.WriteLine("Enter 6 to write to XML file using serialization.");
+            Console.WriteLine("Enter 7 to deserialize from XML file.");
+            Console.WriteLine("Enter 8 to write to JSON using serialization.");
             Console.WriteLine("Press Enter to exit.");
         }
 
@@ -68,6 +73,12 @@ namespace SaladCreation
                     break;
                 case '6':
                     WriteToXmlLFileUsingSerialization();
+                    break;
+                case '7':
+                    DeserializeFromXMLFile();
+                    break;
+                case '8':
+                    WriteToJSONUsingSerialization();
                     break;
                 default:
                     Console.WriteLine("Please retry as such operation doesn't exist.");
@@ -205,20 +216,37 @@ namespace SaladCreation
 
         }
 
+        public class SaladXML
+        {
+
+            [XmlElement("Name")]
+            public string SaladName { get; set; }
+
+            [XmlElement("CalorificValue")]
+            public double Value { get; set; }
+
+            [XmlElement("TimeToCook")]
+            public DateTime Time { get; set; }
+        } 
+
+
         private static void WriteToXmlLFileUsingSerialization()
         {
-            string FileName = "Salad.xml";
-            TextWriter tw = null;
+            TextWriter textWriter = null;
 
             try
             {
-                tw = new StreamWriter(FileName);
-                XmlSerializer serializer = new XmlSerializer(typeof(Salad), new Type[]
-                { 
-                    typeof(Cabbage), typeof(Cucumber), typeof(SweetPepper), typeof(Tomato), typeof(Potato) 
-                });
+                SaladXML saladXML = new SaladXML();
+
+                saladXML.SaladName = "Oliv'e";
+                saladXML.Value = 600;
+                saladXML.Time = DateTime.Parse("00:20:00");
+
+                XmlSerializer serializer = new XmlSerializer(typeof(SaladXML));
+    
                 {
-                    serializer.Serialize(tw, salad);
+                    textWriter = new StreamWriter(@"C:\Salad.xml");
+                    serializer.Serialize(textWriter, saladXML);
                     Console.WriteLine("Object has been serialized.");
                     Console.ReadLine();
                 }
@@ -230,10 +258,83 @@ namespace SaladCreation
 
             finally
             {
-                    tw.Close();
+                textWriter.Close();
             }
 
         }
+
+        public static void DeserializeFromXMLFile()
+        {
+            TextReader textReader = null;
+
+            try
+            {
+                XmlSerializer deserializer = new XmlSerializer(typeof(SaladXML));
+                textReader = new StreamReader(@"C:\Salad.xml");
+                SaladXML saladXML;
+                saladXML = (SaladXML)deserializer.Deserialize(textReader);
+                Console.WriteLine("Object has been successfully deserialized from XML file.");
+                Console.ReadLine();
+            }
+            catch (XmlException)
+            {
+                Console.WriteLine("Failed to deserialize.");
+            }
+            finally
+            {
+                textReader.Close();
+            }
+
+        }
+
+        public class SaladJSON
+        {
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+            public int Id { get; set; }
+
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+            public string Name { get; set; }
+
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+            public int CalorificValue { get; set; }
+
+            [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+            public double Price { get; set; }
+
+            public override string ToString()
+            {
+                return string.Format(
+                "Id={0}, Name={1}, CalorificValue={2}, Price={3}", Id, Name, CalorificValue, Price);
+            }
+
+        }
+
+        private static void WriteToJSONUsingSerialization()
+        {
+            SaladJSON saladJSON = new SaladJSON();
+            saladJSON.Id = 01;
+            saladJSON.Name = "Oliv'e";
+            saladJSON.CalorificValue = 600;
+            saladJSON.Price = 120.5;
+
+            //Serialize an object to Json
+            string actualJson = JsonConvert.SerializeObject(saladJSON);
+
+            //Display serialized to json saladJSON
+            Console.WriteLine(actualJson);
+            Console.ReadLine();
+
+        }
+
+        //private static void DeserializeFromJSON
+        //{
+        //    string exampleJson = "{\"Id\":2013,\"FirstName\":\"Bill\",\"SecondName\":\"Marvel\",\"Payment\": 1500}";
+        //    //Deserialize json string to SaladJSON class
+        //    SaladJSON actualCustomer = JsonConvert.DeserializeObject<SaladJSON>(exampleJson);
+        //    //Display deserialized Customer
+        //    Console.WriteLine(actualCustomer);
+
+        //}
 
     }
 } 
