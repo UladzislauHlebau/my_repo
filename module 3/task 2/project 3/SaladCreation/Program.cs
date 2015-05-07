@@ -9,6 +9,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using System.Xml;
 using Newtonsoft.Json;
+using System.Data.SqlClient;
+using System.Data.Common;
+using System.Data;
+using System.Configuration;
 
 namespace SaladCreation
 {
@@ -46,6 +50,9 @@ namespace SaladCreation
             Console.WriteLine("Enter 6 to write to XML file using serialization.");
             Console.WriteLine("Enter 7 to deserialize from XML file.");
             Console.WriteLine("Enter 8 to write to JSON using serialization.");
+            Console.WriteLine("Enter 9 to show First/Last name of all the employees.");
+            Console.WriteLine("Enter 0 to select rows from DB.");
+            Console.WriteLine("Enter q to delete rows from DB.");
             Console.WriteLine("Press Enter to exit.");
         }
 
@@ -80,6 +87,19 @@ namespace SaladCreation
                 case '8':
                     WriteToJSONUsingSerialization();
                     break;
+                case '9':
+                    ConnectToDB();
+                    break;
+                case '0':
+                    SelectFromDB();
+                    break;
+                case 'q':
+                    DeleteRows("9");
+                    break;
+                case 'w':
+                    StoredProcedureForProducts("Sosiski", DateTime.Now);
+                    break;
+                    
                 default:
                     Console.WriteLine("Please retry as such operation doesn't exist.");
                     break;
@@ -336,6 +356,129 @@ namespace SaladCreation
 
         //}
 
+        public static void ConnectToDB()
+        {
+            string cnStr = ConfigurationManager.AppSettings["cnStr"];
+            // Get connection object
+            using (var cn = new SqlConnection())
+            {
+                Console.WriteLine("Connection object --> " + cn.GetType().Name);
+                cn.ConnectionString = cnStr;
+                cn.Open();
+                // create command object
+                DbCommand cmd = new SqlCommand();
+                Console.WriteLine("Command object --> " + cmd.GetType().Name);
+                cmd.Connection = cn;
+                cmd.CommandText = "Select * From Employees ORDER BY EmployeeID";
+                //show all the employees' First and Last names
+                using(DbDataReader reader = cmd.ExecuteReader())
+                {
+                    while(reader.Read())
+                    {
+                        var fn = reader["FirstName"];
+                        var ln = reader["LastName"];
+                        Console.WriteLine(fn + ", " + ln);
+                    }
+                }
+                Console.ReadLine();
+             }
+        }
+
+        public static void SelectFromDB()
+        {
+            string cnStr = ConfigurationManager.AppSettings["cnStr"];
+            // Get connection object
+            using (var cn = new SqlConnection())
+            {
+                Console.WriteLine("Connection object --> " + cn.GetType().Name);
+                cn.ConnectionString = cnStr;
+                cn.Open();
+                DbCommand cmd = new SqlCommand();
+                Console.WriteLine("Command object --> " + cmd.GetType().Name);
+                cmd.Connection = cn;
+
+                //read using DataTable
+                var employees = new DataTable();
+                cmd.CommandText = "Select * From Employees ORDER BY EmployeeID";
+                using (var dr = cmd.ExecuteReader())
+                {
+                    employees.Load(dr);
+                }
+
+                foreach (DataRow row in employees.Rows)
+                {
+                    Console.WriteLine(
+                            "-> Employee ID: {0}, Last Name: {1}, First Name: {2}, Title: {3}, City: {4}\n",
+                            row["EmployeeID"],
+                            row["LastName"],
+                            row["FirstName"],
+                            row["Title"],
+                            row["City"]);
+                }
+                Console.ReadLine();
+            }
+
+          }
+
+        public static int DeleteRows(string id)
+        {
+                string cnStr = ConfigurationManager.AppSettings["cnStr"];
+                // Get connection object
+                var cn = new SqlConnection();
+            
+                Console.WriteLine("Connection object --> " + cn.GetType().Name);
+                cn.ConnectionString = cnStr;
+                cn.Open();
+
+                int numberOfAffectedRows = 0;
+                string sql = string.Format("Delete FROM [Employees] where EmployeeID = '{0}'", id);
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    try
+                    {
+                        numberOfAffectedRows = cmd.ExecuteNonQuery();
+                        
+                    }
+                    catch (SqlException ex)
+                    {
+                        var error = new Exception("Couldn't delete the employee.", ex);
+                        throw error;
+                    }
+                }
+                return numberOfAffectedRows;
+        }
+
+        private static DataTable StoredProcedureForProducts (string productName, DateTime dateAdded)
+        {
+            string cnStr = ConfigurationManager.AppSettings["cnStr"];
+            using (var cn = new SqlConnection())
+            {
+                cn.ConnectionString = cnStr;
+                cn.Open();
+                var newProducts = new DataTable();
+                using (SqlCommand cmd = new SqlCommand("New Products", cn))
+                {
+
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = new SqlParameter("@ProductName", SqlDbType.NChar);
+                    SqlParameter parameter1 = new SqlParameter("@DateAdded", SqlDbType.DateTime);
+
+                    parameter.Value = productName;
+                    parameter1.Value = dateAdded;
+                    cmd.Parameters.Add(parameter);
+                    cmd.Parameters.Add(parameter1);
+
+                    using (var dr = cmd.ExecuteReader())
+                    {
+                        newProducts.Load(dr);
+                    }
+
+                    return newProducts;
+                }
+            }
+        }
     }
 } 
 
