@@ -20,33 +20,33 @@ namespace Module_3__task_2
             Console.WriteLine("Enter 4 to write to binary file using serialization.");
         }
 
-        //public static void SaladCreation()
-        //{
-        //    int MenuValue = Console.Read();
+        public static void SaladCreation()
+        {
+            int MenuValue = Console.Read();
         
-        //    switch (MenuValue)
-        //    {
-        //        case '1':
-        //            BinaryTextWriter bt = new BinaryTextWriter();
-        //            bt.WriteToBinaryFile();
-        //            break;
-        //        case '2':
-        //            //TextWriter wt = new TextWriter();
-        //            WriteToTextFile();
-        //            break;
-        //        case '3':
-        //            TextReader tr = new TextReader();
-        //            tr.ReadTextFromFile();
-        //            break;
-        //        case '4':
-        //            BinaryTextWriterUsingSerialization btw = new BinaryTextWriterUsingSerialization();
-        //            btw.WriteToBinaryFileUsingSerialization();
-        //            break;
-        //     default:
-        //            Console.WriteLine("Such an operation doesn't exist, please retry.");
-        //            break;
-        //    }
-        //}
+            switch (MenuValue)
+            {
+                case '1':
+                    BinaryTextWriter bt = new BinaryTextWriter();
+                    bt.WriteToBinaryFile();
+                    break;
+                case '2':
+                    //TextWriter wt = new TextWriter();
+                    WriteToTextFile();
+                    break;
+                case '3':
+                    TextReader tr = new TextReader();
+                    tr.ReadTextFromFile();
+                    break;
+                case '4':
+                    BinaryTextWriterUsingSerialization btw = new BinaryTextWriterUsingSerialization();
+                    btw.WriteToBinaryFileUsingSerialization();
+                    break;
+             default:
+                    Console.WriteLine("Such an operation doesn't exist, please retry.");
+                    break;
+            }
+        }
         
         public static void Main()
         {
