@@ -51,6 +51,7 @@ namespace SaladCreation
             Console.WriteLine("Enter 6 to write to XML file using serialization.");
             Console.WriteLine("Enter 7 to deserialize from XML file.");
             Console.WriteLine("Enter 8 to write to JSON using serialization.");
+            Console.WriteLine("Enter e to deserialize from JSON.");
             Console.WriteLine("Enter 9 to show First/Last name of all the employees.");
             Console.WriteLine("Enter 0 to select rows from DB.");
             Console.WriteLine("Enter q to delete rows from DB.");
@@ -88,6 +89,9 @@ namespace SaladCreation
                     break;
                 case '8':
                     WriteToJSONUsingSerialization();
+                    break;
+                case 'e':
+                    DeserializeFromJSON();
                     break;
                 case '9':
                     ConnectToDB();
@@ -348,15 +352,16 @@ namespace SaladCreation
 
         }
 
-        //private static void DeserializeFromJSON
-        //{
-        //    string exampleJson = "{\"Id\":2013,\"FirstName\":\"Bill\",\"SecondName\":\"Marvel\",\"Payment\": 1500}";
-        //    //Deserialize json string to SaladJSON class
-        //    SaladJSON actualCustomer = JsonConvert.DeserializeObject<SaladJSON>(exampleJson);
-        //    //Display deserialized Customer
-        //    Console.WriteLine(actualCustomer);
+        public static void DeserializeFromJSON()
+        {
+            string exampleJson = "{\"Id\":01,\"Name\":\"Olivie\",\"CalorificValue\":\"400\",\"Price\": 1500}";
+            //Deserialize json string to SaladJSON class
+            SaladJSON saladJSON = JsonConvert.DeserializeObject<SaladJSON>(exampleJson);
+            //Display deserialized Customer
+            Console.WriteLine(saladJSON);
+            Console.ReadLine();
 
-        //}
+        }
 
         public static void ConnectToDB()
         {
