@@ -22,6 +22,7 @@ namespace SaladCreation
 
         public static void Main()
         {
+            
             salad = new Salad();
 
             Console.WriteLine("Let's cook vegetable salad and calculate its calorific value.");
@@ -53,6 +54,7 @@ namespace SaladCreation
             Console.WriteLine("Enter 9 to show First/Last name of all the employees.");
             Console.WriteLine("Enter 0 to select rows from DB.");
             Console.WriteLine("Enter q to delete rows from DB.");
+            Console.WriteLine("Enter w to use stored procedure.");
             Console.WriteLine("Press Enter to exit.");
         }
 
@@ -94,10 +96,10 @@ namespace SaladCreation
                     SelectFromDB();
                     break;
                 case 'q':
-                    DeleteRows("9");
+                    DeleteRows("10249");
                     break;
                 case 'w':
-                    StoredProcedureForProducts("Sosiski", DateTime.Now);
+                    StoredProcedureForProducts("10248");
                     break;
                     
                 default:
@@ -431,7 +433,7 @@ namespace SaladCreation
                 cn.Open();
 
                 int numberOfAffectedRows = 0;
-                string sql = string.Format("Delete FROM [Employees] where EmployeeID = '{0}'", id);
+                string sql = string.Format("Delete FROM [Order Details] where OrderID = '{0}'", id);
                 using (SqlCommand cmd = new SqlCommand(sql, cn))
                 {
                     try
@@ -441,41 +443,40 @@ namespace SaladCreation
                     }
                     catch (SqlException ex)
                     {
-                        var error = new Exception("Couldn't delete the employee.", ex);
+                        var error = new Exception("Couldn't delete the category.", ex);
                         throw error;
                     }
                 }
                 return numberOfAffectedRows;
         }
 
-        private static DataTable StoredProcedureForProducts (string productName, DateTime dateAdded)
+        private static DataTable StoredProcedureForProducts (string orderId)
         {
             string cnStr = ConfigurationManager.AppSettings["cnStr"];
             using (var cn = new SqlConnection())
             {
                 cn.ConnectionString = cnStr;
                 cn.Open();
-                var newProducts = new DataTable();
-                using (SqlCommand cmd = new SqlCommand("New Products", cn))
+                var orderDetails = new DataTable();
+                using (SqlCommand cmd = new SqlCommand("CustOrdersDetail", cn))
                 {
 
 
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    SqlParameter parameter = new SqlParameter("@ProductName", SqlDbType.NChar);
-                    SqlParameter parameter1 = new SqlParameter("@DateAdded", SqlDbType.DateTime);
+                    SqlParameter parameter = new SqlParameter("@OrderID", SqlDbType.Int);
 
-                    parameter.Value = productName;
-                    parameter1.Value = dateAdded;
+                    parameter.Value = orderId;
+                    
                     cmd.Parameters.Add(parameter);
-                    cmd.Parameters.Add(parameter1);
+                    
 
                     using (var dr = cmd.ExecuteReader())
                     {
-                        newProducts.Load(dr);
+                        orderDetails.Load(dr);
                     }
 
-                    return newProducts;
+                    return orderDetails;
                 }
             }
         }
