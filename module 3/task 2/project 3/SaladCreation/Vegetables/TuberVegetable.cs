@@ -22,7 +22,7 @@ namespace SaladCreation.Vegetables
 
         public double CalorificValue()
         {
-            return Weight * (Index / 80);
+            return Weight * (Index / 100);
         }
     }
 }

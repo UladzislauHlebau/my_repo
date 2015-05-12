@@ -31,6 +31,11 @@ namespace SaladCreation
 
             Console.WriteLine(salad);
 
+            salad.Sort();
+
+            Console.WriteLine("\nSorted salad:");
+            Console.WriteLine(salad);
+
             MenuCreate();
 
             SaladCreationMenu();

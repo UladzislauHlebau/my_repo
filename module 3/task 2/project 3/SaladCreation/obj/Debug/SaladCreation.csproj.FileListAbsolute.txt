@@ -8,7 +8,8 @@ c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SaladCreation\S
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\SaladCreation.exe.config
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\obj\Debug\SaladCreation.exe
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\obj\Debug\SaladCreation.pdb
-d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\obj\Debug\SaladCreation.csprojResolveAssemblyReference.cache
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\SaladCreation.exe
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\SaladCreation.pdb
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\Newtonsoft.Json.dll
+d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\nunit.framework.dll
+d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\nunit.framework.xml

@@ -1,0 +1,4 @@
+SaladCreationTest.SaladTestClass.SaladTypeTest
+SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest
+SaladCreationTest.SaladTestClass.SameObjectsTest
+SaladCreationTest.SaladTestClass.ExceptionTest

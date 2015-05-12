@@ -1,0 +1,10 @@
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\obj\Debug\SaladCreationTest.csprojResolveAssemblyReference.cache
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.pdb
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\nunit.framework.dll
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreation.exe
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\Newtonsoft.Json.dll
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreation.pdb
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\nunit.framework.xml
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\obj\Debug\SaladCreationTest.dll
+D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\obj\Debug\SaladCreationTest.pdb

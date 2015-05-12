@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1007]D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll</TopNode>
+  <SelectedNode>[0-1004]SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1007]D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1008]SaladCreationTest" Expanded="true" />
+    <Node UniqueName="[0-1000]SaladCreationTest.SaladTestClass" Expanded="true" />
+    <Node UniqueName="[0-1004]SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest" Checked="true" />
+  </Nodes>
+</VisualState>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll" total="3" errors="0" failures="1" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2015-05-12" time="20:08:38">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll" executed="True" result="Failure" success="False" time="0.140" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="SaladCreationTest" executed="True" result="Failure" success="False" time="0.108" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="SaladTestClass" executed="True" result="Failure" success="False" time="0.107" asserts="0">
+            <results>
+              <test-case name="SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest" executed="True" result="Failure" success="False" time="0.039" asserts="1">
+                <categories>
+                  <category name="Extended" />
+                </categories>
+                <failure>
+                  <message><![CDATA[  Expected: collection containing <Potato has the following weight:200, calorific index:45 and ingathering type:Greenhouse type>
+  But was:  < <Cabbage has the following weight:100, calorific index:24 and lifespan:1 year>, <Cucumber has the following weight:50, calorific index:15 and lifespan:1 year>, <Sweet Pepper has the following weight:100, calorific index:50 and lifespan:1 year>, <Tomato has the following weight:150, calorific index:25 and lifespan:1 year>, <Potato has the following weight:200, calorific index:45 and ingathering type:Greenhouse type> >
+]]></message>
+                  <stack-trace><![CDATA[at SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest() in d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\Class1.cs:line 70
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="SaladCreationTest.SaladTestClass.ExceptionTest" executed="False" result="Ignored">
+                <categories>
+                  <category name="Exception Test" />
+                </categories>
+                <reason>
+                  <message><![CDATA[Not ready!]]></message>
+                </reason>
+              </test-case>
+              <test-case name="SaladCreationTest.SaladTestClass.SaladTypeTest" executed="True" result="Success" success="True" time="0.004" asserts="1">
+                <categories>
+                  <category name="Smoke" />
+                </categories>
+                <properties>
+                  <property name="Timeout" value="2000" />
+                </properties>
+              </test-case>
+              <test-case name="SaladCreationTest.SaladTestClass.SameObjectsTest" executed="True" result="Success" success="True" time="0.008" asserts="1">
+                <categories>
+                  <category name="Extended" />
+                </categories>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

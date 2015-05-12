@@ -30,10 +30,10 @@ namespace SaladCreation
             SaladCollection.Add(potato);
         }
 
-        //public void Sort()
-        //{
-        //    SaladCollection.Sort(new CalorificComparer());
-        //}
+        public void Sort()
+        {
+            SaladCollection.Sort(new CalorificComparer());
+        }
 
         //public void TotalCalorificValue
         //{
