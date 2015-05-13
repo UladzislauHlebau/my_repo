@@ -27,7 +27,14 @@ namespace SaladCreation
 
             Console.WriteLine("Let's cook vegetable salad and calculate its calorific value.");
 
-            salad.Create();
+            
+            salad.Add(new Cabbage(100, 24, "1 year"));
+            salad.Add(new Cucumber(50, 15, "1 year"));
+            salad.Add(new SweetPepper(100, 50, "1 year"));
+            salad.Add(new Tomato(150, 25, "1 year"));
+            salad.Add(new Potato(200, 45, "Greenhouse type"));
+
+            //salad.Create();
 
             Console.WriteLine(salad);
 

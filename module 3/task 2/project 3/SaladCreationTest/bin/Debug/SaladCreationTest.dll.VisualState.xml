@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1007]D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll</TopNode>
-  <SelectedNode>[0-1004]SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest</SelectedNode>
+  <TopNode>[0-1009]D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll</TopNode>
+  <SelectedNode>[0-1003]SaladCreationTest.SaladTestClass.SaladCollectionCreationTest</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1007]D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll" Expanded="true" />
-    <Node UniqueName="[0-1008]SaladCreationTest" Expanded="true" />
-    <Node UniqueName="[0-1000]SaladCreationTest.SaladTestClass" Expanded="true" />
+    <Node UniqueName="[0-1009]D:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreationTest\bin\Debug\SaladCreationTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1010]SaladCreationTest" Expanded="true" />
+    <Node UniqueName="[0-1000]SaladCreationTest.SaladTestClass" Expanded="true" Checked="true" />
     <Node UniqueName="[0-1004]SaladCreationTest.SaladTestClass.CollectionContainsAnObjectTest" Checked="true" />
+    <Node UniqueName="[0-1007]SaladCreationTest.SaladTestClass.ExceptionTest" Checked="true" />
+    <Node UniqueName="[0-1006]SaladCreationTest.SaladTestClass.NegativeTest" Checked="true" />
+    <Node UniqueName="[0-1003]SaladCreationTest.SaladTestClass.SaladCollectionCreationTest" Checked="true" />
+    <Node UniqueName="[0-1008]SaladCreationTest.SaladTestClass.SaladSortTest" Checked="true" />
+    <Node UniqueName="[0-1002]SaladCreationTest.SaladTestClass.SaladToStringTest" Checked="true" />
+    <Node UniqueName="[0-1001]SaladCreationTest.SaladTestClass.SaladTypeTest" Checked="true" />
+    <Node UniqueName="[0-1005]SaladCreationTest.SaladTestClass.SameObjectsTest" Checked="true" />
   </Nodes>
 </VisualState>

@@ -12,24 +12,6 @@ namespace SaladCreation
     {
         public List<Vegetable> SaladCollection = new List<Vegetable>();
 
-        public void Create()
-        {
-            Vegetable cabbage = new Cabbage(100, 24, "1 year");
-            SaladCollection.Add(cabbage);
-
-            Vegetable cucumber = new Cucumber(50, 15, "1 year");
-            SaladCollection.Add(cucumber);
-
-            Vegetable sweetpepper = new SweetPepper(100, 50, "1 year");
-            SaladCollection.Add(sweetpepper);
-
-            Vegetable tomato = new Tomato(150, 25, "1 year");
-            SaladCollection.Add(tomato);
-
-            Vegetable potato = new Potato(200, 45, "Greenhouse type");
-            SaladCollection.Add(potato);
-        }
-
         public void Sort()
         {
             SaladCollection.Sort(new CalorificComparer());
@@ -40,7 +22,12 @@ namespace SaladCreation
         //    return CalorificValue(_vegetables);
         //}
 
-
+        public void Add(Vegetable v)
+        {
+            if(SaladCollection.Contains(v))
+                throw new Exception();
+            SaladCollection.Add(v);
+        }
 
         public override string ToString()
         {

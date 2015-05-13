@@ -14,28 +14,6 @@ namespace SaladCreationTest
     [TestFixture]
     public class SaladTestClass
     {
-        Salad salad = new Salad();
-        List<Vegetable> SaladCollection = new List<Vegetable>();
-
-        [SetUp]
-        public void Create()
-        {
-            Vegetable cabbage = new Cabbage(100, 24, "1 year");
-            SaladCollection.Add(cabbage);
-
-            Vegetable cucumber = new Cucumber(50, 15, "1 year");
-            SaladCollection.Add(cucumber);
-
-            Vegetable sweetpepper = new SweetPepper(100, 50, "1 year");
-            SaladCollection.Add(sweetpepper);
-
-            Vegetable tomato = new Tomato(150, 25, "1 year");
-            SaladCollection.Add(tomato);
-
-            Vegetable potato = new Potato(200, 45, "Greenhouse type");
-            SaladCollection.Add(potato);
-        }
-
         [Test, Timeout(2000)]
         [Category("Smoke")]
         public void SaladTypeTest()
@@ -49,6 +27,7 @@ namespace SaladCreationTest
         [Category("Smoke")]
         public void SaladToStringTest()
         {
+            Salad salad = new Salad();
             string result = salad.ToString();
 
             StringAssert.IsMatch(result, "Salad contains: \nCabbage has the following weight:100, calorific index:24 and lifespan:1 year;\nCucumber has the following weight:50, calorific index:15 and lifespan:1 year;\nSweet Pepper has the following weight:100, calorific index:50 and lifespan:1 year;\nTomato has the following weight:150, calorific index:25 and lifespan:1 year;\nPotato has the following weight:200, calorific index:45 and ingathering type:Greenhouse type.");
@@ -58,7 +37,13 @@ namespace SaladCreationTest
         [Category("Extended")]
         public void SaladCollectionCreationTest()
         {
-            Assert.IsNotEmpty(SaladCollection);
+            Salad salad = new Salad();
+            salad.Add(new Cabbage(100, 24, "1 year"));
+            salad.Add(new Cucumber(50, 15, "1 year"));
+            salad.Add(new SweetPepper(100, 50, "1 year"));
+            salad.Add(new Tomato(150, 25, "1 year"));
+            salad.Add(new Potato(200, 45, "Greenhouse type"));
+            Assert.IsNotEmpty(salad.SaladCollection);
             Console.WriteLine("Collection contains some objects and hence is not empty.");
         }
 
@@ -66,8 +51,9 @@ namespace SaladCreationTest
         [Category("Extended")]
         public void CollectionContainsAnObjectTest()
         {
+            Salad salad = new Salad();
             Potato potato = new Potato(200, 45, "Greenhouse type");
-            Assert.Contains(potato, SaladCollection);
+            Assert.Contains(potato, salad.SaladCollection);
             Console.WriteLine("Collection contains Potato object.");
         }
 
@@ -91,16 +77,20 @@ namespace SaladCreationTest
 
         [Test]
         [Category("Exception Test")]
-        [Ignore("Not ready!")]
         public void ExceptionTest()
         {
-            
+            var salad = new Salad();
+            Vegetable cabbage = new Cabbage(100, 24, "1 year");
+            salad.Add(cabbage);
+
+            Assert.Throws(typeof(Exception), () => salad.Add(cabbage));
         }
 
         [Test]
         [Ignore("Not ready!")]
         public void SaladSortTest()
         {
+            Salad salad = new Salad();
             salad.Sort();
         }
 
