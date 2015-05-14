@@ -13,3 +13,4 @@ d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\Newtonsoft.Json.dll
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\nunit.framework.dll
 d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\bin\Debug\nunit.framework.xml
+d:\Automation Training\Git_repo\my_repo\module 3\task 2\project 3\SaladCreation\obj\Debug\SaladCreation.csprojResolveAssemblyReference.cache

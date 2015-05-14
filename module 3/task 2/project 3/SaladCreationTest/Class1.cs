@@ -52,7 +52,8 @@ namespace SaladCreationTest
         public void CollectionContainsAnObjectTest()
         {
             Salad salad = new Salad();
-            Potato potato = new Potato(200, 45, "Greenhouse type");
+            Vegetable potato = new Potato(200, 45, "Greenhouse type");
+            salad.Add(potato);
             Assert.Contains(potato, salad.SaladCollection);
             Console.WriteLine("Collection contains Potato object.");
         }
