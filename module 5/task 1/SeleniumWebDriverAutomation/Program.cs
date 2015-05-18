@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,12 +33,13 @@ namespace SeleniumWebDriverAutomation
             IWebElement element4 = driver.FindElement(By.CssSelector("input#mailbox__auth__button"));
             element4.Click();
 
-            //to implement check if login is successful
+            //this is a check to see if login is successful
+            new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//i[(text()='vld.gl@mail.ru')]"))));
 
-
-
+            //this element is found by this xpath from time to time, that's why i changed it
             //IWebElement element5 = driver.FindElement(By.XPath("//span[@class='b-toolbar__btn__text b-toolbar__btn__text_pad']"));
             //element5.Click();
+
             IWebElement element5 = driver.FindElement(By.XPath("//span[(text()='Написать письмо')]"));
             element5.Click();
 
@@ -61,8 +63,45 @@ namespace SeleniumWebDriverAutomation
 
             IWebElement element10 = driver.FindElement(By.XPath("//span[(text()='Черновики')]"));
             element10.Click();
-            
 
+            //this is a check to see if a draft has correct address
+            new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//div[(text()='merrymaker12@gmail.com')]"))));
+
+            //this is a check to see if a draft has correct subject
+            new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//div[(text()='WebDriver Test')]"))));
+
+            //this is a check to see if a draft has correct email body
+            new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//span[(text()='Hey, this is WebDriver Test! С уважением, Vl Gl vld.gl@mail.ru')]"))));
+
+            IWebElement element11 = driver.FindElement(By.XPath("//div[(text()='merrymaker12@gmail.com')]"));
+            element11.Click();
+
+            IWebElement element12 = driver.FindElement(By.XPath("//span[@class='b-toolbar__btn__text']"));
+            element12.Click();
+
+            IWebElement element13 = driver.FindElement(By.XPath("//span[(text()='Черновики')]"));
+            element13.Click();
+
+            IWebElement wdr = null;
+
+            //this block checks whether email has been sent or not
+            try
+            {
+                wdr = new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//div[(text()='merrymaker12@gmail.com')]"))));
+            }
+            catch (OpenQA.Selenium.WebDriverTimeoutException)
+            {
+                Console.WriteLine("Email has been sent.");
+            }
+
+            IWebElement element14 = driver.FindElement(By.XPath("//span[(text()='Отправленные')]"));
+            element14.Click();
+
+            //this is a check to see if a draft is in 'Sent' folder
+            new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//div[(text()='merrymaker12@gmail.com')]"))));
+
+            IWebElement element15 = driver.FindElement(By.CssSelector("a#PH_logoutLink"));
+            element15.Click();
 
             //driver.Quit();
         }

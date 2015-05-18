@@ -6,3 +6,5 @@ C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriv
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriverAutomation\SeleniumWebDriverAutomation\obj\Debug\SeleniumWebDriverAutomation.csprojResolveAssemblyReference.cache
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriverAutomation\SeleniumWebDriverAutomation\obj\Debug\SeleniumWebDriverAutomation.exe
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriverAutomation\SeleniumWebDriverAutomation\obj\Debug\SeleniumWebDriverAutomation.pdb
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriverAutomation\SeleniumWebDriverAutomation\bin\Debug\WebDriver.Support.dll
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriverAutomation\SeleniumWebDriverAutomation\bin\Debug\WebDriver.Support.xml
