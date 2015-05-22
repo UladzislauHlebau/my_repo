@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-05-22" time="20:54:16">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Success" success="True" time="28.572" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Success" success="True" time="28.540" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Success" success="True" time="28.536" asserts="0">
+            <results>
+              <test-case name="WebDriverPageObject.MailRuTest.draftEmailSubjectAndTextVerification" executed="True" result="Success" success="True" time="28.513" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

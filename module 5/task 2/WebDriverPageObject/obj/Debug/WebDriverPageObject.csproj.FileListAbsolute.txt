@@ -1,0 +1,11 @@
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe.config
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriverPageObject.pdb
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\nunit.framework.dll
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriver.dll
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriver.Support.dll
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\nunit.framework.xml
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriver.xml
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriver.Support.xml
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.pdb
