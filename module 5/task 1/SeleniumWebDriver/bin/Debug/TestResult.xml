@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\SeleniumWebDriver.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-05-25" time="21:14:24">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\SeleniumWebDriver.exe" executed="True" result="Success" success="True" time="42.315" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="SeleniumWebDriver" executed="True" result="Success" success="True" time="42.284" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Success" success="True" time="42.279" asserts="0">
+            <results>
+              <test-case name="SeleniumWebDriver.MailRuTest.oneCanSendEmail" executed="True" result="Success" success="True" time="42.259" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

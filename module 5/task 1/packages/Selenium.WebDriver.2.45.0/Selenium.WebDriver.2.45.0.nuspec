@@ -7,7 +7,7 @@
     <authors>Selenium Committers</authors>
     <owners>Selenium Committers</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>http://code.google.com/p/selenium/</projectUrl>
+    <projectUrl>https://github.com/SeleniumHQ/selenium</projectUrl>
     <iconUrl>http://seleniumhq.org/images/big-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Selenium is a set of different software tools each with a different approach to supporting browser automation. These tools are highly flexible, allowing many options for locating and manipulating elements within a browser, and one of its key features is the support for automating multiple browser platforms. This package contains the .NET bindings for the newer, more concise and object-based Selenium WebDriver API, which uses native OS-level events to manipulate the browser, bypassing the JavaScript sandbox, and does not require the Selenium Server to automate the browser.</description>

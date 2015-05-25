@@ -1,0 +1,11 @@
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\SeleniumWebDriver.exe.config
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\SeleniumWebDriver.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\SeleniumWebDriver.pdb
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\nunit.framework.dll
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\WebDriver.dll
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\nunit.framework.xml
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\WebDriver.xml
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\obj\Debug\SeleniumWebDriver.exe
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\obj\Debug\SeleniumWebDriver.pdb
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\WebDriver.Support.dll
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\WebDriver.Support.xml
