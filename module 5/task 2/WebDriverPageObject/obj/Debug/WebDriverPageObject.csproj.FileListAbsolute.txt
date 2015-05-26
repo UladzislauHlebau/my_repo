@@ -9,3 +9,4 @@ c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageOb
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\bin\Debug\WebDriver.Support.xml
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.exe
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.pdb
+C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.csprojResolveAssemblyReference.cache

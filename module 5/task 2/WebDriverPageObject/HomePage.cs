@@ -46,6 +46,9 @@ namespace WebDriverPageObject
         [FindsBy(How = How.XPath, Using = "//div[(text()='WebDriver Test')]")]
         public IWebElement draftEmailSubject;
 
+        [FindsBy(How = How.XPath, Using = "//span[@class='b-toolbar__btn__text']")]
+        public IWebElement sendButton;
+
         public IWebElement ElementItemFrame
         {
             get
@@ -90,6 +93,11 @@ namespace WebDriverPageObject
             return draftEmailSubject.Text;
         }
 
+        public void sendEmail()
+        {
+            draftEmail.Click();
+            sendButton.Click();
+        }
 
 
         public string getPageTitle()
