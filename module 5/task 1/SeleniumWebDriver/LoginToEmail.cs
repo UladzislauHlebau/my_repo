@@ -72,6 +72,12 @@ namespace SeleniumWebDriver
 
         }
 
+        public void findSentEmailInSent()
+        {
+            IWebElement element14 = driver.FindElement(By.XPath("//span[(text()='Отправленные')]"));
+            element14.Click();
+        }
+
         public void findSentEmailInDrafts()
         {
             IWebElement element13 = driver.FindElement(By.XPath("//div[(text()='merrymaker12@gmail.com')]"));

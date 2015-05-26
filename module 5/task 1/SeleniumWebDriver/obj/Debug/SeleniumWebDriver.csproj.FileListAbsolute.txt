@@ -9,3 +9,4 @@ c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriv
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\obj\Debug\SeleniumWebDriver.pdb
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\WebDriver.Support.dll
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\bin\Debug\WebDriver.Support.xml
+c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\SeleniumWebDriver\SeleniumWebDriver\obj\Debug\SeleniumWebDriver.csprojResolveAssemblyReference.cache

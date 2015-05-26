@@ -13,11 +13,25 @@ namespace SeleniumWebDriver
     [TestFixture]
     public class MailRuTest
     {
+        IWebDriver driver;
+        [TestFixtureSetUp]
+        public void toRunDriver()
+        {
+            driver = new FirefoxDriver();
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+        }
+
+        [TestFixtureTearDown]
+        public void toCloseDriver()
+        {
+            driver.Close();
+        }
+       
+
         [Test]
         public void oneCanLoginMailRu()
         {
-            IWebDriver driver = new FirefoxDriver();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            
             LoginToEmail loginToEmail = new LoginToEmail(driver);
             loginToEmail.canLoginEmail();
             string title = loginToEmail.getPageTitle();
@@ -28,8 +42,7 @@ namespace SeleniumWebDriver
         [Test]
         public void oneCanCreateEmailAndSaveIt()
         {
-            IWebDriver driver = new FirefoxDriver();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            
             LoginToEmail loginToEmail = new LoginToEmail(driver);
             loginToEmail.canLoginEmail();
             loginToEmail.canCreateEmail();
@@ -47,8 +60,7 @@ namespace SeleniumWebDriver
         [Test]
         public void oneCanSendEmail()
         {
-            IWebDriver driver = new FirefoxDriver();
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            
             LoginToEmail loginToEmail = new LoginToEmail(driver);
             loginToEmail.canLoginEmail();
             loginToEmail.canCreateEmail();
@@ -59,10 +71,20 @@ namespace SeleniumWebDriver
             driver.Close();
         }
 
-        //[Test]
-        //public void
+        [Test]
+        public void sentEmailVerification()
+        {
+            
+            LoginToEmail loginToEmail = new LoginToEmail(driver);
+            loginToEmail.canLoginEmail();
+            loginToEmail.canCreateEmail();
+            loginToEmail.canSendEmail();
+            loginToEmail.findSentEmailInSent();
 
+            //this is a check to see if a draft is in 'Sent' folder
+            new WebDriverWait(driver, TimeSpan.FromSeconds(3)).Until(ExpectedConditions.ElementExists((By.XPath("//div[(text()='merrymaker12@gmail.com')]"))));
 
-
+            driver.Close();
+        }
     }
 }
