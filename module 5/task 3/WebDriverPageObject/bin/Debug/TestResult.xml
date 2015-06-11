@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="7" errors="7" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-09" time="21:11:17">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Failure" success="False" time="10.532" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Failure" success="False" time="10.497" asserts="0">
+        <results>
+          <test-suite type="GenericFixture" name="RemoteDriverTests&lt;TWebDriver&gt;" executed="True" result="Failure" success="False" time="10.497" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="RemoteDriverTests&lt;ChromeDriver&gt;" executed="True" result="Failure" success="False" time="10.492" asserts="0">
+                <results>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.draftEmailSubjectAndTextVerification" executed="True" result="Error" success="False" time="0.293" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.draftEmailVerification" executed="True" result="Error" success="False" time="0.012" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.oneCanCreateEmailAndSaveIt" executed="True" result="Error" success="False" time="0.007" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.oneCanLoginMailRu" executed="True" result="Error" success="False" time="0.007" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.oneCanSendEmail" executed="True" result="Error" success="False" time="0.007" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.sentEmailVerificationInDrafts" executed="True" result="Error" success="False" time="0.006" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                  <test-case name="WebDriverPageObject.RemoteDriverTests&lt;ChromeDriver&gt;.sentEmailVerificationInSent" executed="True" result="Error" success="False" time="0.009" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.InvalidOperationException : Error forwarding the new session Empty pool of VM for setup Capabilities [{platform=ANY, javascriptEnabled=true, browserName=chrome, version=}]]]></message>
+                      <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at WebDriverPageObject.RemoteDriverTests`1.RunDriver() in d:\Automation Training\Git_repo\my_repo\module 5\task 3\WebDriverPageObject\MailRuTest.cs:line 35
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
