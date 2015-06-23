@@ -10,3 +10,6 @@ c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageOb
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.exe
 c:\users\uladzislau_hlebau\documents\visual studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.pdb
 C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\WebDriverPageObject\WebDriverPageObject\obj\Debug\WebDriverPageObject.csprojResolveAssemblyReference.cache
+d:\Automation Training\Git_repo\my_repo\module 5\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe.config
+d:\Automation Training\Git_repo\my_repo\module 5\task 2\WebDriverPageObject\obj\Debug\WebDriverPageObject.exe
+d:\Automation Training\Git_repo\my_repo\module 5\task 2\WebDriverPageObject\obj\Debug\WebDriverPageObject.pdb

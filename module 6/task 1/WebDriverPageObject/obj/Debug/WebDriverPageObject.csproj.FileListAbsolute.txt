@@ -13,3 +13,14 @@ C:\Users\Uladzislau_Hlebau\Documents\Visual Studio 2013\Projects\WebDriverPageOb
 d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe.config
 d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\obj\Debug\WebDriverPageObject.exe
 d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\obj\Debug\WebDriverPageObject.pdb
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.pdb
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\nunit.framework.dll
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriver.dll
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriver.Support.dll
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\nunit.framework.xml
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriver.xml
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriver.Support.xml
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\obj\Debug\WebDriverPageObject.csprojResolveAssemblyReference.cache
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\CommandLine.dll
+d:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\CommandLine.xml
