@@ -12,8 +12,8 @@ namespace WebDriverPageObject
     [TestFixture]
     public class MailRuTest
     {
-        private string login = "vld.gl";
-        private string password = "WebDriver";
+        private string login = System.Configuration.ConfigurationSettings.AppSettings["login1"];
+        private string password = System.Configuration.ConfigurationSettings.AppSettings["pass1"];
 
         Steps.Steps steps = new Steps.Steps();
 

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-23" time="22:26:09">
+<test-results name="D:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-24" time="21:05:51">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Uladzislau_Hlebau" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Success" success="True" time="76.024" asserts="0">
+  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Success" success="True" time="75.804" asserts="0">
     <results>
-      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Success" success="True" time="75.989" asserts="0">
+      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Success" success="True" time="75.771" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Success" success="True" time="75.984" asserts="0">
+          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Success" success="True" time="75.766" asserts="0">
             <results>
-              <test-case name="WebDriverPageObject.MailRuTest.OneCanSendEmail" executed="True" result="Success" success="True" time="75.962" asserts="2" />
+              <test-case name="WebDriverPageObject.MailRuTest.OneCanSendEmail" executed="True" result="Success" success="True" time="75.554" asserts="2" />
             </results>
           </test-suite>
         </results>
