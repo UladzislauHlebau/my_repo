@@ -73,45 +73,48 @@ namespace WebDriverPageObject
             PageFactory.InitElements(this.driver, this);
         }
 
-        public void newEmailCreation()
+        public void NewEmailCreation()
         {
             createEmailButton.Click();
             addressField.SendKeys(ADDRESS);
             subjectField.SendKeys(SUBJECT);
-            this.driver.SwitchTo().Frame(ElementItemFrame);
+            driver.SwitchTo().Frame(ElementItemFrame);
             emailTextField.SendKeys(MESSAGE);
-            this.driver.SwitchTo().DefaultContent();
+        }
+
+        public void EmailSaveToDrafts()
+        {
+            driver.SwitchTo().DefaultContent();
             saveButton.Click();
         }
 
-        public bool draftVerification()
-
+        public bool DraftVerification()
         {
             draftsCategory.Click();
             return draftEmail.Displayed;
         }
 
-        public bool sentEmailVerification()
+        public bool SentEmailVerification()
         {
             sentCategory.Click();
             return draftEmail.Displayed;
         }
 
-        public string emailSubjectAndTextVerification()
+        public string EmailSubjectAndTextVerification()
         {
             return draftEmailSubject.Text;
         }
 
-        public void sendEmail()
+        public void EmailSending()
         {
             draftEmail.Click();
             sendButton.Click();
         }
 
 
-        public string getPageTitle()
+        public string GetPageTitle()
         {
-            return this.driver.Title;
+            return driver.Title;
         }
     }
 }

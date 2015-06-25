@@ -11,10 +11,8 @@ namespace WebDriverPageObject
 {
     public class LoginPage : Page
     {
+        private IWebDriver driver;
         private string URL = "https://mail.ru/";
-        private string LOGIN = "vld.gl";
-        private string PASSWORD = "WebDriver";
-
 
         [FindsBy(How = How.CssSelector, Using = "input#mailbox__login")]
         public IWebElement loginField;
@@ -31,17 +29,17 @@ namespace WebDriverPageObject
             PageFactory.InitElements(this.driver, this);
         }
 
-        public void openPage()
+        public void OpenPage()
         {
-            this.driver.Navigate().GoToUrl(URL);
+            driver.Navigate().GoToUrl(URL);
         }
 
-        public HomePage loginToEmail()
+        public HomePage LoginToEmail(string login, string password)
         {
-            loginField.SendKeys(LOGIN);
-            passwordField.SendKeys(PASSWORD);
+            loginField.SendKeys(login);
+            passwordField.SendKeys(password);
             loginButton.Click();
-            return new HomePage(this.driver);
+            return new HomePage(driver);
         }
 
     }

@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommandLine">
+      <HintPath>..\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
@@ -52,11 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomePage.cs" />
-    <Compile Include="LoginPage.cs" />
-    <Compile Include="MailRuTest.cs" />
-    <Compile Include="DriverSingleton.cs" />
-    <Compile Include="Page.cs" />
+    <Compile Include="Utilities\ChromeDriverCreator.cs" />
+    <Compile Include="Utilities\FirefoxDriverCreator.cs" />
+    <Compile Include="Utilities\WebDriverCreator.cs" />
+    <Compile Include="WebDriver\Driver.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\LoginPage.cs" />
+    <Compile Include="Steps\Steps.cs" />
+    <Compile Include="Tests\MailRuTest.cs" />
+    <Compile Include="PageObjects\Page.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +72,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

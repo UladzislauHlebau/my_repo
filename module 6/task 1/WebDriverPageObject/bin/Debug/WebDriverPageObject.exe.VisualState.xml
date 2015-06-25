@@ -7,5 +7,6 @@
     <Node UniqueName="[0-1005]D:\Automation Training\Git_repo\my_repo\module 6\task 1\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" Expanded="true" />
     <Node UniqueName="[0-1006]WebDriverPageObject" Expanded="true" />
     <Node UniqueName="[0-1000]WebDriverPageObject.MailRuTest" Expanded="true" />
+    <Node UniqueName="[0-1004]WebDriverPageObject.MailRuTest.OneCanSendEmail" Checked="true" />
   </Nodes>
 </VisualState>

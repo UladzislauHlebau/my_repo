@@ -8,14 +8,11 @@ using System.Threading.Tasks;
 
 namespace WebDriverPageObject
 {
-    class DriverSingleton
+    class Driver
     {
         private static IWebDriver driver;
 
-        private DriverSingleton()
-        {
-            
-        }
+        private Driver() { }
 
         public static IWebDriver GetDriver()
         {
@@ -28,30 +25,22 @@ namespace WebDriverPageObject
             return driver;
         }
 
+        public static void CloseBrowser()
+        {
+            driver.Close();
+        }
+
+        public static void QuitBrowser()
+        {
+            driver.Quit();
+        }
+
         private static IWebDriver CreateDriver()
         {
             IWebDriver driver;
             driver = new FirefoxDriver();
             return driver;
         }
-
-        public static void CloseBrowser()
-        {
-            driver.Close();
-            driver = null;
-        }
-
-        public static void QuitBrowser()
-        {
-            driver.Quit();
-            driver = null;
-        }
-
-        public Boolean isElementPresent(By locator)
-        {
-            return driver.FindElements(locator).Count() > 0;
-        }
-
-
+        
     }
 }
