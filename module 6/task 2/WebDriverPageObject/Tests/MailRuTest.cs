@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 using WebDriverPageObject.Utilities;
 
 namespace WebDriverPageObject
@@ -22,16 +23,14 @@ namespace WebDriverPageObject
         [SetUp]
         public void InitInstance()
         {
-            //steps.InitBrowser();
-            WebDriverCreator creator = new ChromeDriverCreator();
-            IWebDriver driver = creator.FactoryMethod();
+            steps.InitBrowser();
         }
 
-        [TearDown]
-        public void CloseInstance()
-        {
-            steps.CloseBrowser();
-        }
+        //[TearDown]
+        //public void CloseInstance()
+        //{
+        //    steps.CloseBrowser();
+        //}
 
         //[TestFixtureTearDown]
         //public void QuitInstance()

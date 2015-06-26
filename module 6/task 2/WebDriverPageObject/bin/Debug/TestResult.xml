@@ -1,26 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-25" time="21:33:58">
+<test-results name="D:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-26" time="20:29:35">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Uladzislau_Hlebau" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Failure" success="False" time="0.416" asserts="0">
+  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Failure" success="False" time="0.412" asserts="0">
     <results>
-      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Failure" success="False" time="0.385" asserts="0">
+      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Failure" success="False" time="0.381" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Failure" success="False" time="0.380" asserts="0">
+          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Failure" success="False" time="0.376" asserts="0">
             <results>
-              <test-case name="WebDriverPageObject.MailRuTest.OneCanLoginMailRu" executed="True" result="Error" success="False" time="0.185" asserts="0">
+              <test-case name="WebDriverPageObject.MailRuTest.OneCanLoginMailRu" executed="True" result="Error" success="False" time="0.180" asserts="0">
                 <failure>
-                  <message><![CDATA[SetUp : OpenQA.Selenium.DriverServiceNotFoundException : The chromedriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html.
-TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                  <message><![CDATA[SetUp : OpenQA.Selenium.DriverServiceNotFoundException : The chromedriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html.]]></message>
                   <stack-trace><![CDATA[at OpenQA.Selenium.DriverService.FindDriverServiceExecutable(String executableName, Uri downloadUrl)
 at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)
-at WebDriverPageObject.Utilities.ChromeDriverCreator.FactoryMethod() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\Utilities\ChromeDriverCreator.cs:line 20
-at WebDriverPageObject.MailRuTest.InitInstance() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\Tests\MailRuTest.cs:line 27
---TearDown
-at WebDriverPageObject.Driver.CloseBrowser() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\WebDriver\Driver.cs:line 30
-at WebDriverPageObject.Steps.Steps.CloseBrowser() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\Steps\Steps.cs:line 22
-at WebDriverPageObject.MailRuTest.CloseInstance() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\Tests\MailRuTest.cs:line 33
+at WebDriverPageObject.Driver.CreateDriver() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\WebDriver\Driver.cs:line 43
+at WebDriverPageObject.Driver.GetDriver() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\WebDriver\Driver.cs:line 23
+at WebDriverPageObject.Steps.Steps.InitBrowser() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\Steps\Steps.cs:line 17
+at WebDriverPageObject.MailRuTest.InitInstance() in d:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\Tests\MailRuTest.cs:line 26
 ]]></stack-trace>
                 </failure>
               </test-case>

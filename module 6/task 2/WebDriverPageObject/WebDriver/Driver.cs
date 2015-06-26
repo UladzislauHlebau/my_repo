@@ -1,10 +1,12 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebDriverPageObject.Utilities;
 
 namespace WebDriverPageObject
 {
@@ -38,7 +40,7 @@ namespace WebDriverPageObject
         private static IWebDriver CreateDriver()
         {
             IWebDriver driver;
-            driver = new FirefoxDriver();
+            driver = new ChromeDriver();
             return driver;
         }
         
