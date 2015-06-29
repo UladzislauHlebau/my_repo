@@ -26,11 +26,11 @@ namespace WebDriverPageObject
             steps.InitBrowser();
         }
 
-        //[TearDown]
-        //public void CloseInstance()
-        //{
-        //    steps.CloseBrowser();
-        //}
+        [TearDown]
+        public void CloseInstance()
+        {
+            steps.CloseBrowser();
+        }
 
         //[TestFixtureTearDown]
         //public void QuitInstance()

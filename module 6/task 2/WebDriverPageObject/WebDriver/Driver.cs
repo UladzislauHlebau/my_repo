@@ -40,7 +40,7 @@ namespace WebDriverPageObject
         private static IWebDriver CreateDriver()
         {
             IWebDriver driver;
-            driver = new ChromeDriver();
+            driver = new FirefoxDriver();
             return driver;
         }
         
