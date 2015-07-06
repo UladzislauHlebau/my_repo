@@ -1,15 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-29" time="20:49:26">
-  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Uladzislau_Hlebau" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
+<test-results name="D:\Automation Training\Git_repo\my_repo\module 6\task 3\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-07-06" time="20:40:56">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="EPBYMINW4248" user="Uladzislau_Hlebau" user-domain="MINSK" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 6\task 2\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Success" success="True" time="68.202" asserts="0">
+  <test-suite type="Assembly" name="D:\Automation Training\Git_repo\my_repo\module 6\task 3\WebDriverPageObject\bin\Debug\WebDriverPageObject.exe" executed="True" result="Failure" success="False" time="38.494" asserts="0">
     <results>
-      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Success" success="True" time="68.170" asserts="0">
+      <test-suite type="Namespace" name="WebDriverPageObject" executed="True" result="Failure" success="False" time="38.442" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="MailRuTest" executed="True" result="Success" success="True" time="68.166" asserts="0">
+          <test-suite type="Namespace" name="SpecflowFeatures" executed="True" result="Failure" success="False" time="38.442" asserts="0">
             <results>
-              <test-case name="WebDriverPageObject.MailRuTest.OneCanLoginMailRu" executed="True" result="Success" success="True" time="67.973" asserts="1" />
+              <test-suite type="TestFixture" name="MailRUFeature" description="MailRU" executed="True" result="Failure" success="False" time="38.437" asserts="0">
+                <results>
+                  <test-case name="WebDriverPageObject.SpecflowFeatures.MailRUFeature.LoginToEmailbox" description="Login to emailbox" executed="True" result="Error" success="False" time="0.435" asserts="0">
+                    <categories>
+                      <category name="login" />
+                    </categories>
+                    <failure>
+                      <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                      <stack-trace><![CDATA[at WebDriverPageObject.MailRuTest.MailRuIsOpened() in d:\Automation Training\Git_repo\my_repo\module 6\task 3\WebDriverPageObject\Tests\MailRuTest.cs:line 43
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at WebDriverPageObject.SpecflowFeatures.MailRUFeature.ScenarioCleanup() in d:\Automation Training\Git_repo\my_repo\module 6\task 3\WebDriverPageObject\SpecflowFeatures\MailRu.feature.cs:line 0
+at WebDriverPageObject.SpecflowFeatures.MailRUFeature.LoginToEmailbox() in d:\Automation Training\Git_repo\my_repo\module 6\task 3\WebDriverPageObject\SpecflowFeatures\MailRu.feature:line 10
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
             </results>
           </test-suite>
         </results>

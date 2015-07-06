@@ -15,40 +15,27 @@ namespace WebDriverPageObject
     [Binding]
     public class MailRuTest
     {
-        private string login = System.Configuration.ConfigurationSettings.AppSettings["login1"];
-        private string password = System.Configuration.ConfigurationSettings.AppSettings["pass1"];
-        private string ADDRESS = "merrymaker12@gmail.com";
-        private string SUBJECT = "WebDriver Test";
-        private string MESSAGE = "Hey, this is WebDriver Test!";
-        IWebDriver driver;
-        Steps.Steps steps = new Steps.Steps();
-        LoginPage loginPage;
-        HomePage homePage;
-        
+        private static string login = System.Configuration.ConfigurationSettings.AppSettings["login1"];
+        private static string password = System.Configuration.ConfigurationSettings.AppSettings["pass1"];
+        private static string ADDRESS = "merrymaker12@gmail.com";
+        private static string SUBJECT = "WebDriver Test";
+        private static string MESSAGE = "Hey, this is WebDriver Test!";
+        public static LoginPage loginPage;
+        public static HomePage homePage;
 
-        //[SetUp]
-        //public void InitInstance()
+
+        [BeforeFeature]
+        public static void InitInstance()
+        {
+            Driver.GetDriver();
+        }
+
+        //[AfterFeature]
+        //public static void QuitInstance()
         //{
-        //    steps.InitBrowser();
+        //    Driver.QuitBrowser();
         //}
 
-        //[TearDown]
-        //public void CloseInstance()
-        //{
-        //    steps.CloseBrowser();
-        //}
-
-        //[TestFixtureTearDown]
-        //public void QuitInstance()
-        //{
-        //    steps.QuitBrowser();
-        //}
-
-        //[BeforeFeature]
-        //public void InitInstance()
-        //{
-        //    steps.InitBrowser();
-        //}
 #region
         [Given(@"mail.ru is opened")]
         public void MailRuIsOpened()
@@ -83,7 +70,7 @@ namespace WebDriverPageObject
         }
 
         [When(@"I click Save button")]
-        public void IClickSaveButton()
+        public void ClickSaveButton()
         {
             homePage.EmailSaveToDrafts();
         }
@@ -95,6 +82,13 @@ namespace WebDriverPageObject
             string neededSubjectAndText = "WebDriver TestHey, this is WebDriver Test! С уважением, Vl Gl vld.gl@mail.ru";
             Assert.AreEqual(returnedSubjectAndText, neededSubjectAndText);
         }
+
+        [AfterFeature]
+        public static void CloseInstance()
+        {
+            Driver.CloseBrowser();
+        }
+
 #endregion
     }
 }
